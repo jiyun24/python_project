@@ -1,0 +1,45 @@
+ # 세부 목표 제시
+    print("\n----- 세부 목표 -----")
+    
+    # 추천 직무에 따른 세부 목표 설정
+    detailed_goals = {
+        "데이터 분석가": [
+            "Python과 SQL을 활용한 데이터 처리 및 분석 프로젝트 진행.",
+            "Tableau 또는 Power BI를 사용한 데이터 시각화 연습.",
+            "Kaggle 대회 참가 또는 데이터셋 기반 분석 포트폴리오 제작.",
+            "ADsP 또는 데이터 관련 자격증 취득 준비."
+        ],
+        "생산관리자": [
+            "Lean 관리 기법(5S, 칸반, JIT) 실습.",
+            "SAP 또는 Oracle ERP 시스템 학습 및 자격증 취득 준비.",
+            "생산성 관리 도구(MS Project, Primavera) 사용법 익히기.",
+            "공정 최적화 사례 연구 및 실습."
+        ],
+        "SCM 전문가": [
+            "공급망 최적화 도구 사용법 학습(Excel 고급, Power BI).",
+            "SCM 최적화 사례 프로젝트 연구 및 보고서 작성.",
+            "APICS의 CPIM 자격증 취득 준비.",
+            "WMS 또는 TMS와 같은 물류 관리 시스템 실습."
+        ],
+        "품질 관리자": [
+            "QC 7 Tools 및 SPC(통계적 공정 관리) 실습.",
+            "Six Sigma Green Belt 자격증 취득 준비.",
+            "ISO 9001 및 품질 인증 절차 학습.",
+            "품질 관련 데이터 분석 및 리포트 작성 연습."
+        ],
+        "경영컨설턴트": [
+            "MECE, SWOT, PESTLE 등 문제 해결 프레임워크 학습.",
+            "프레젠테이션 제작 및 전달 능력 향상.",
+            "컨설팅 사례 분석 및 가상 프로젝트 실행.",
+            "PMP(Project Management Professional) 자격증 취득 준비."
+        ]
+    }
+    
+    # 선택된 직무의 세부 목표 출력
+    selected_goals = detailed_goals.get(recommended_career["직무"], [])
+    if selected_goals:
+        for i, goal in enumerate(selected_goals, start=1):
+            print(f"{i}. {goal}")
+    else:
+        print("추천 직무에 대한 세부 목표를 찾을 수 없습니다.")
+    
